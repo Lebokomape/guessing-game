@@ -6,11 +6,14 @@
 
 using namespace std; // cout, endl, complex are all part of this namespace
 
+
+
 int main()
 {
-	using Complex = complex<float>;
-	auto num1 = Complex{2.0, 2.0};  // use auto for type deduction
-	auto num2 = Complex{4.0, -2.0}; // use uniform initialisation syntax (curly braces)
+	using ComplexNum = complex<float>;
+
+	auto num1 = ComplexNum{2.0, 2.0};  // use auto for type deduction
+	auto num2 = ComplexNum{4.0, -2.0}; // use uniform initialisation syntax (curly braces)
 
 	auto answer = num1 * num2; // type deduced for 'answer' is: complex<float>
 
